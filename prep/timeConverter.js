@@ -8,11 +8,12 @@ function formatAs12HourClock(time) {
     // if hour value under 12, continue
     if (hours > 12) {
         // add pm & return value
-        return `${hours - 12}:00 pm`
+        return `${String(hours - 12)}:00 pm`
     }
     // add am and return value
-    return `${hours}:00 am`
+    return `${String(hours)}:00 am`
 }
 
 console.log(formatAs12HourClock("23:00"));
 console.log(formatAs12HourClock("14:00"));
+export {formatAs12HourClock};
