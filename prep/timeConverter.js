@@ -11,9 +11,7 @@ function formatAs12HourClock(time) {
         return `${String(hours - 12)}:00 pm`
     }
     // add am and return value
-    return `${String(hours)}:00 am`
+    return `${time} am`
 }
 
-console.log(formatAs12HourClock("23:00"));
-console.log(formatAs12HourClock("14:00"));
 export {formatAs12HourClock};
