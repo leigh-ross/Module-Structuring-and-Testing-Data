@@ -13,11 +13,11 @@ function formatAs12HourClock(time) {
     timePeriod = "pm";
   }
   else if (hours < 12) {
-    hours12 = String(hours12).padStart(2, "0");
+    hours12 = String(hours).padStart(2, "0");
     timePeriod = "am";
   }
   else if (hours > 12) {
-    hours12 = String(hours12 - 12).padStart(2, "0");
+    hours12 = String(hours - 12).padStart(2, "0");
     timePeriod = "pm"
   }
   return `${hours12}:${minutes} ${timePeriod}`
