@@ -10,6 +10,21 @@ describe('division by 3', () => {
 
 });
 
+describe('division by 3 and 5', () => {
+
+    test('15 returns fizzbuzz', () => {
+        assert.equal(fizzbuzz(15), "fizzbuzz");
+    });
+
+    test('30 returns fizzbuzz', () => {
+        assert.equal(fizzbuzz(30), "fizzbuzz");
+    });
+
+    test('90 returns fizzbuzz', () => {
+        assert.equal(fizzbuzz(90), "fizzbuzz");
+    });
+})
+
 describe('division by 5', () => {
 
     test('5 returns buzz', () => {
