@@ -40,6 +40,22 @@ describe('division by 5', () => {
     });
 })
 
+describe('returning the number as a string', () => { 
+
+    test('1 returns "1"', () => {
+        assert.equal(fizzbuzz(1), "1");
+    });
+
+    test('4 returns "4"', () => {
+        assert.equal(fizzbuzz(4), "4");
+    });
+
+    test('91 returns "91"', () => {
+        assert.equal(fizzbuzz(91), "91");
+    });
+
+});
+
 /*
 Tests to run:
 - Division by 3 = fizz
