@@ -25,4 +25,16 @@
 
 export function getCardValue(card) {
   // TODO: Implement this function
+  const cardValue = card.slice(0,-1);
+  const cardValueNumber = Number(cardValue)
+  if (cardValue === "A") {
+    return 11
+  }
+  else if (cardValue === "K" || cardValue === "Q" || cardValue === "J") {
+    return 10
+  }
+  else if (cardValueNumber >= 2 && cardValueNumber <= 10) {
+    return cardValueNumber
+  }
+  throw new Error(`Expected a number followed by a suit, but got "${card}"`);
 }
