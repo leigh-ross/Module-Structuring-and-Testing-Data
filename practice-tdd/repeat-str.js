@@ -1,5 +1,17 @@
-export function repeatStr() {
-  // Your implementation of this function must *not* call String.prototype.repeat (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat).
-  // The goal is to re-implement that function, not to use it.
-  return "hellohellohello";
+export function repeatStr(str, count) {
+  let repeatedString = "";
+  if (count < 0) {
+    throw new Error("Please enter a non-negative number");
+  }
+  else if (count === 0){
+    return ""
+  }
+  else if (count === 1) {
+    return str
+  }
+  for (i = 0; i < count; i++) {
+    repeatedString += str
+    
+  }
+  return repeatedString
 }
