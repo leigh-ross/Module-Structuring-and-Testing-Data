@@ -1,0 +1,16 @@
+{
+  "name": "practice-tdd",
+  "version": "1.0.0",
+  "description": "In this section you'll practice this key skill of building up your program test first.",
+  "main": "count.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
