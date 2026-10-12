@@ -16,3 +16,50 @@ test(`Should return 11 when given an ace card`, () => {
 // please refer to the Jest documentation:
 // https://jestjs.io/docs/expect#tothrowerror
 
+describe("Valid Face cards", () => {
+  test("Check Ace", () => {
+    expect(getCardValue("A♠")).toBe(11);
+  });
+  test("Check King", () => {
+    expect(getCardValue("K♠")).toBe(10);
+  });
+  test("Check Queen", () => {
+    expect(getCardValue("Q♠")).toBe(10);
+  });
+  test("Check Jack", () => {
+    expect(getCardValue("J♠")).toBe(10);
+  });
+});
+
+describe("Valid number cards", () => {
+  test("Check 2", () => {
+    expect(getCardValue("2♠")).toBe(2);
+  });
+  test("Check 5", () => {
+    expect(getCardValue("5♠")).toBe(5);
+  });
+  test("Check 7", () => {
+    expect(getCardValue("7♠")).toBe(7);
+  });
+  test("Check 10", () => {
+    expect(getCardValue("10♠")).toBe(10);
+  });
+});
+
+describe("Invalid cards", () => {
+  test("Arbitrary non-card string", () => {
+    expect(() => getCardValue("invalid")).toThrow(
+      'Expected a number followed by a suit, but got "invalid"'
+    );
+  });
+  test("Out of bounds: 1♥", () => {
+    expect(() => getCardValue("1♥")).toThrow(
+      'Expected a number followed by a suit, but got "1♥"'
+    );
+  });
+  test("Out of bounds: 11♥", () => {
+    expect(() => getCardValue("11♥")).toThrow(
+      'Expected a number followed by a suit, but got "11♥"'
+    );
+  });
+});
