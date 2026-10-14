@@ -44,3 +44,26 @@ describe ("Invalid cards", () => {
   assert.throws(() => getCardValue("11♥"), /Expected a number followed by a suit, but got "11♥"/);
     });
 });
+
+describe("Invalid card suits", () => {
+  test("Arbitrary non-card string", () => {
+    assert.throws(
+      () => getCardValue("2O"),
+      /Expected card suit to be: "♠", "♥", "♦", "♣" but got "2O"/,
+      "Expected clear error"
+    );
+  });
+  test("Out of bounds: 1d", () => {
+    assert.throws(
+      () => getCardValue("8d"),
+      /Expected card suit to be: "♠", "♥", "♦", "♣" but got "8d"/
+    );
+  });
+  test("Out of bound: 11X", () => {
+    assert.throws(
+      () => getCardValue("9X"),
+      //`Expected card suit to be: "♠", "♥", "♦", "♣" but got ${cardSuit}`
+      /Expected card suit to be: "♠", "♥", "♦", "♣" but got "9X"/
+    );
+  });
+});

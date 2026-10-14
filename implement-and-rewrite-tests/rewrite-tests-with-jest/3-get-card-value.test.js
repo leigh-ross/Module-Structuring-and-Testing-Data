@@ -63,3 +63,21 @@ describe("Invalid cards", () => {
     );
   });
 });
+
+describe("Invalid card suits", () => {
+  test("Invalid suit: 2O", () => {
+    expect(() => getCardValue("2O")).toThrow(
+      'Expected card suit to be: "♠", "♥", "♦", "♣" but got "2O"'
+    );
+  });
+  test("Invalid suit: 8d", () => {
+    expect(() => getCardValue("8d")).toThrow(
+      'Expected card suit to be: "♠", "♥", "♦", "♣" but got "8d"'
+    );
+  });
+  test("Invalid suit: 9X", () => {
+    expect(() => getCardValue("9X")).toThrow(
+      'Expected card suit to be: "♠", "♥", "♦", "♣" but got "9X"'
+    );
+  });
+});
