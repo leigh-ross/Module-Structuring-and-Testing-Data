@@ -1,5 +1,4 @@
 // Implement a function getAngleType
-//
 // Don't forget to write tests in implement-tests-with-node-test.
 //
 // When given an angle in degrees, it should return a string indicating the type of angle:
