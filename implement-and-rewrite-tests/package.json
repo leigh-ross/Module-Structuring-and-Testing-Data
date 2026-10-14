@@ -1,0 +1,16 @@
+{
+  "name": "implement-and-rewrite-tests",
+  "version": "1.0.0",
+  "description": "Before writing any code, please read the [Testing Function Guide](testing-guide.md) to learn how to choose test values that thoroughly test a function.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
