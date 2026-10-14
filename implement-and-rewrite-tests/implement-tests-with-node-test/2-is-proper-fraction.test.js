@@ -60,9 +60,23 @@ describe ("Improper fractions", () => {
   });
 });
 
-describe ("Negative numerator", () => {
-  test("-98/100", () => {
-    assert.equal(isProperFraction(-98, 100), false);
+describe ("Negative proper fractions", () => {
+  test("-98/100 is proper", () => {
+    assert.equal(isProperFraction(-98, 100), true);
+  });
+
+  test("-1/9 is proper", () => {
+    assert.equal(isProperFraction(-1, 9), true);
+  });
+
+  test("-8/15 is proper", () => {
+    assert.equal(isProperFraction(-8, 15), true);
+  });
+});
+
+describe("Negative improper fractions", () => {
+  test("-980/100", () => {
+    assert.equal(isProperFraction(-980, 100), false);
   });
 
   test("-19768/9 is improper", () => {

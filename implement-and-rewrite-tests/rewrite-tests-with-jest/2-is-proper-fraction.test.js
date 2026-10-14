@@ -1,4 +1,4 @@
-import { isProperFraction } from "../implement/2-is-proper-fraction.js";
+import { isProperFraction } from "../implement/2-is-proper-fraction.js"; fix
 
 // TODO: Write tests in Jest syntax to cover all combinations of positives, negatives, zeros, and other categories.
 
@@ -47,8 +47,8 @@ describe("Improper fractions", () => {
   });
 });
 
-describe("Negative numerator", () => {
-  test("-98/100 is not a proper fraction", () => {
+describe("Negative improper fractions", () => {
+  test("-980/100 is not a proper fraction", () => {
     expect(isProperFraction(-98, 100)).toBe(false);
   });
   test("-19768/9 is not a proper fraction", () => {
@@ -56,5 +56,17 @@ describe("Negative numerator", () => {
   });
   test("-8/5 is not a proper fraction", () => {
     expect(isProperFraction(-8, 5)).toBe(false);
+  });
+});
+
+describe("Negative proper fractions", () => {
+  test("-98/100 is a proper fraction", () => {
+    expect(isProperFraction(-98, 100)).toBe(true);
+  });
+  test("-19768/9 is a proper fraction", () => {
+    expect(isProperFraction(-1, 9)).toBe(true);
+  });
+  test("-8/5 is a proper fraction", () => {
+    expect(isProperFraction(-8, 15)).toBe(true);
   });
 });
