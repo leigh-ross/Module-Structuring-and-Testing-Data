@@ -76,8 +76,8 @@ describe("Invalid card suits", () => {
     );
   });
   test("Invalid suit: 9X", () => {
-    expect(() => getCardValue("9X")).toThrow(
-      'Expected card suit to be: "♠", "♥", "♦", "♣" but got "9X"'
+    expect(() => getCardValue("9★")).toThrow(
+      'Expected card suit to be: "♠", "♥", "♦", "♣" but got "9★"'
     );
   });
 });

@@ -46,23 +46,22 @@ describe ("Invalid cards", () => {
 });
 
 describe("Invalid card suits", () => {
-  test("Arbitrary non-card string", () => {
+  test("Uppercase letter suit: 2O", () => {
     assert.throws(
       () => getCardValue("2O"),
       /Expected card suit to be: "♠", "♥", "♦", "♣" but got "2O"/,
       "Expected clear error"
     );
   });
-  test("Out of bounds: 1d", () => {
+  test("Lowercase letter suit: 8d", () => {
     assert.throws(
       () => getCardValue("8d"),
       /Expected card suit to be: "♠", "♥", "♦", "♣" but got "8d"/
     );
   });
-  test("Out of bound: 11X", () => {
+  test("Out of bound: 9★", () => {
     assert.throws(
-      () => getCardValue("9X"),
-      //`Expected card suit to be: "♠", "♥", "♦", "♣" but got ${cardSuit}`
+      () => getCardValue("9★"),
       /Expected card suit to be: "♠", "♥", "♦", "♣" but got "9X"/
     );
   });
