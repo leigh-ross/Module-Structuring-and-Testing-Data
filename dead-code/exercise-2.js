@@ -19,6 +19,4 @@ function countAndCapitalisePets(petsArr) {
   return petCount;
 }
 
-const countedPetsStartingWithH = countAndCapitalisePets(petsStartingWithH);
-
-console.log(countedPetsStartingWithH); // { 'HAMSTER': 3, 'HORSE': 1 } <- Final console log
+console.log(countAndCapitalisePets(petsStartingWithH)); // { 'HAMSTER': 3, 'HORSE': 1 } <- Final console log
