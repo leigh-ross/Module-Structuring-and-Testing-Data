@@ -8,6 +8,4 @@ function sayHello(greeting, name) {
   return `${greeting}, ${name}!`;
 }
 
-const greetingMessage = sayHello(greeting, testName);
-
-console.log(greetingMessage); // 'hello, Aman!'
+console.log(sayHello(greeting, testName)); // 'hello, Aman!'
