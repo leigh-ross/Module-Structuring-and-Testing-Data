@@ -75,7 +75,7 @@ describe("Invalid card suits", () => {
       'Expected card suit to be: "♠", "♥", "♦", "♣" but got "8d"'
     );
   });
-  test("Invalid suit: 9X", () => {
+  test("Invalid suit: 9★", () => {
     expect(() => getCardValue("9★")).toThrow(
       'Expected card suit to be: "♠", "♥", "♦", "♣" but got "9★"'
     );

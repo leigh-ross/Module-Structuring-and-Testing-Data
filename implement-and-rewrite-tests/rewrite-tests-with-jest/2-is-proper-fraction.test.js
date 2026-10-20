@@ -1,4 +1,4 @@
-import { isProperFraction } from "../implement/2-is-proper-fraction.js"; fix
+import { isProperFraction } from "../implement/2-is-proper-fraction.js";
 
 // TODO: Write tests in Jest syntax to cover all combinations of positives, negatives, zeros, and other categories.
 

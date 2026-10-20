@@ -62,7 +62,7 @@ describe("Invalid card suits", () => {
   test("Out of bound: 9★", () => {
     assert.throws(
       () => getCardValue("9★"),
-      /Expected card suit to be: "♠", "♥", "♦", "♣" but got "9X"/
+      /Expected card suit to be: "♠", "♥", "♦", "♣" but got "9★"/
     );
   });
 });
