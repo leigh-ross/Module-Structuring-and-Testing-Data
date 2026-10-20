@@ -49,7 +49,7 @@ describe("Improper fractions", () => {
 
 describe("Negative improper fractions", () => {
   test("-980/100 is not a proper fraction", () => {
-    expect(isProperFraction(-98, 100)).toBe(false);
+    expect(isProperFraction(-980, 100)).toBe(false);
   });
   test("-19768/9 is not a proper fraction", () => {
     expect(isProperFraction(-19768, 9)).toBe(false);
