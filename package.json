@@ -1,16 +1,24 @@
 {
   "name": "module-structuring-and-testing-data",
   "version": "1.0.0",
-  "description": "Like learning a musical instrument, programming requires daily practice.",
+  "description": "> https://programming.codeyourfuture.io/structuring-data/",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leigh-ross/Module-Structuring-and-Testing-Data.git"
   },
   "keywords": [],
-  "author": "Code Your Future",
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "jest": "^29.7.0"
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/leigh-ross/Module-Structuring-and-Testing-Data/issues"
+  },
+  "homepage": "https://github.com/leigh-ross/Module-Structuring-and-Testing-Data#readme",
+  "devDependencies": {
+    "jest": "^30.5.2"
   }
 }
