@@ -4,14 +4,14 @@ export function repeatStr(str, count) {
     throw new Error("Please enter a non-negative number");
   }
   else if (count === 0){
-    return ""
+    return "";
   }
   else if (count === 1) {
-    return str
+    return str;
   }
   for (i = 0; i < count; i++) {
-    repeatedString += str
+    repeatedString += str;
     
   }
-  return repeatedString
+  return repeatedString;
 }
